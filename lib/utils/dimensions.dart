@@ -23,10 +23,17 @@ class Dimensions {
   static double hPageView1020 = screenHeight / (heightRef / 1020);
 
   // dynamic page view width
-  static double listViewTextContSize = screenWidth / (widthRef / 100);
-  static double listViewImageSize = screenWidth / (widthRef / 120);
   static double wPageView100 = screenWidth / (widthRef / 100);
   static double wPageView120 = screenWidth / (widthRef / 120);
+  static double wPageView220 = screenWidth / (widthRef / 220);
+  static double wPageView320 = screenWidth / (widthRef / 320);
+  static double wPageView420 = screenWidth / (widthRef / 420);
+  static double wPageView520 = screenWidth / (widthRef / 520);
+  static double wPageView620 = screenWidth / (widthRef / 620);
+  static double wPageView720 = screenWidth / (widthRef / 720);
+  static double wPageView820 = screenWidth / (widthRef / 820);
+  static double wPageView920 = screenWidth / (widthRef / 920);
+  static double wPageView1020 = screenWidth / (widthRef / 1020);
 
   // dynamic height padding and margin
   static double height1 = screenHeight / (heightRef / 1);
