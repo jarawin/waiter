@@ -17,9 +17,11 @@ class _MainFoodPageState extends State<MainFoodPage> {
   Widget build(BuildContext context) {
     // print("current height is ${MediaQuery.of(context).size.height.toString()}");
     // print("current width is ${MediaQuery.of(context).size.width.toString()}");
+
     return Scaffold(
       body: Column(
         children: [
+          // ignore: avoid_unnecessary_containers
           Container(
             child: Container(
               margin: EdgeInsets.only(
@@ -64,7 +66,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
               ),
             ),
           ),
-          Expanded(child: SingleChildScrollView(
+          const Expanded(
+              child: SingleChildScrollView(
             child: FoodPageBody(),
           )),
         ],
