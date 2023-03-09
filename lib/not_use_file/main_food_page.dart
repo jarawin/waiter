@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/home/call_waiter_screen.dart';
-import 'package:food_delivery/home/food_page_body.dart';
+import 'package:food_delivery/not_use_file/food_page_body.dart';
 import 'package:food_delivery/home/main_food_screen.dart';
-import 'package:food_delivery/home/order_food_screen.dart';
 import 'package:food_delivery/home/point_page_screen.dart';
 import 'package:food_delivery/home/setting_page_screen.dart';
+import 'package:food_delivery/ordercart/list_menu.dart';
+import 'package:food_delivery/ordercart/order_screen.dart';
 import 'package:food_delivery/utils/colors.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/big_text.dart';
@@ -12,6 +13,7 @@ import 'package:food_delivery/widgets/small_text.dart';
 //หน้าหลัก ใช้เชื่อมfileหน้าอื่นๆ
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
+
 
   @override
   State<MainFoodPage> createState() => _MainFoodPageState();
@@ -30,7 +32,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
     _pages = [
       {'page': MainFoodScreen(), 'title': 'Categories'},
       {'page': Pointpage(), 'title': 'Your Favorites'},
-      {'page': OrderFood(), 'title': 'Your Favorites'},
+      {'page': CartScreen(), 'title': 'Your Favorites'},
       {'page': CallWaiter(), 'title': 'Your Favorites'},
       {'page': SettingPage(), 'title': 'Your Favorites'},
     ];
@@ -41,7 +43,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
     // print("current height is ${MediaQuery.of(context).size.height.toString()}");
     // print("current width is ${MediaQuery.of(context).size.width.toString()}");
     return Scaffold(
-      body: _pages![_selectedPageIndex]['page'],
+      //body: _pages![_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
        //backgroundColor: Color(0xFF89dad0),
