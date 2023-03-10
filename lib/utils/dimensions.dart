@@ -12,6 +12,7 @@ class Dimensions {
   // dynamic page view height
   static double hPageView100 = screenHeight / (heightRef / 100);
   static double hPageView120 = screenHeight / (heightRef / 120);
+  static double hPageView150 = screenHeight / (heightRef / 150);
   static double hPageView220 = screenHeight / (heightRef / 220);
   static double hPageView320 = screenHeight / (heightRef / 320);
   static double hPageView420 = screenHeight / (heightRef / 420);
@@ -25,6 +26,7 @@ class Dimensions {
   // dynamic page view width
   static double wPageView100 = screenWidth / (widthRef / 100);
   static double wPageView120 = screenWidth / (widthRef / 120);
+  static double wPageView150 = screenWidth / (widthRef / 150);
   static double wPageView220 = screenWidth / (widthRef / 220);
   static double wPageView320 = screenWidth / (widthRef / 320);
   static double wPageView420 = screenWidth / (widthRef / 420);
@@ -120,6 +122,7 @@ class Dimensions {
   static double icon5 = screenHeight / (heightRef / 5);
   static double icon10 = screenHeight / (heightRef / 10);
   static double icon15 = screenHeight / (heightRef / 15);
+  static double icon16 = screenHeight / (heightRef / 16);
   static double icon20 = screenHeight / (heightRef / 20);
   static double icon25 = screenHeight / (heightRef / 25);
   static double icon30 = screenHeight / (heightRef / 30);
@@ -127,4 +130,7 @@ class Dimensions {
   static double icon40 = screenHeight / (heightRef / 40);
   static double icon45 = screenHeight / (heightRef / 45);
   static double icon50 = screenHeight / (heightRef / 50);
+
+  // dynamic image size
+  static double img350 = screenHeight / (heightRef / 350);
 }

@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/home/call_waiter_screen.dart';
-import 'package:food_delivery/home/food_page_body.dart';
-import 'package:food_delivery/home/main_food_screen.dart';
-import 'package:food_delivery/home/order_food_screen.dart';
-import 'package:food_delivery/home/point_page_screen.dart';
-import 'package:food_delivery/home/setting_page_screen.dart';
-import 'package:food_delivery/utils/colors.dart';
-import 'package:food_delivery/utils/dimensions.dart';
-import 'package:food_delivery/widgets/big_text.dart';
-import 'package:food_delivery/widgets/small_text.dart';
+import 'package:food_delivery/pages/home/call_waiter_screen.dart';
+import 'package:food_delivery/pages/home/food_page_body.dart';
+import 'package:food_delivery/pages/home/main_food_screen.dart';
+import 'package:food_delivery/pages/home/order_food_screen.dart';
+import 'package:food_delivery/pages/home/point_page_screen.dart';
+import 'package:food_delivery/pages/home/setting_page_screen.dart';
 
 //หน้าหลัก ใช้เชื่อมfileหน้าอื่นๆ
 class MainFoodPage extends StatefulWidget {
@@ -30,7 +26,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
   void initState() {
     //ตรงนี้คือกดไอคอนเเล้วจะเชื่อมไปหน้านั้นๆนะ
     _pages = [
-      {'page': MainFoodScreen(), 'title': 'Categories'},
+      {'page': const MainFoodScreen(), 'title': 'Categories'},
       {'page': Pointpage(), 'title': 'Your Favorites'},
       {'page': OrderFood(), 'title': 'Your Favorites'},
       {'page': CallWaiter(), 'title': 'Your Favorites'},
@@ -62,7 +58,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
             icon: Icon(Icons.credit_score),
             tooltip: 'Point',
             label: 'Point',
-            //backgroundColor: Colors.blue.withOpacity(1.0),
+            // backgroundColor: Colors.blue.withOpacity(1.0),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.fastfood_outlined),
